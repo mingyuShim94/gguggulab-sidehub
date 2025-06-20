@@ -75,3 +75,29 @@ body {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
 }
+
+/* Print styles for privacy policy pages */
+@media print {
+  nav, footer, .no-print {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  
+  .container {
+    max-width: none !important;
+    padding: 0 !important;
+  }
+  
+  h1, h2, h3 {
+    color: black !important;
+    break-after: avoid;
+  }
+  
+  section {
+    break-inside: avoid;
+  }
+}

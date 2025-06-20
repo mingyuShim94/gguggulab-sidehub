@@ -1,0 +1,41 @@
+{
+  "baldlight": {
+    "appName": "Bald Flashlight",
+    "effectiveDate": "2025/06/17",
+    "contactEmail": "gguggulab@gmail.com",
+    "sections": [
+      {
+        "title": "Information We Collect",
+        "content": "We do **not** collect personally identifiable information (PII) from users. However, we may collect and process the following types of data:\n\n* **Advertising Data**: Non-personal identifiers (such as Ad ID) may be used by third-party services (e.g., Google AdMob) to display ads.\n* **Analytics Data**: Aggregated and anonymous usage statistics via Firebase Analytics and Crashlytics to improve app performance and stability.\n* **Local Storage**: Customization data (e.g., unlocked bald styles) is stored **only on your device**."
+      },
+      {
+        "title": "How We Use Your Data",
+        "content": "* To show interstitial and rewarded ads through AdMob.\n* To improve app functionality, animations, and user experience.\n* To debug and fix crashes or bugs using anonymized crash logs.\n\nWe do **not** share your data with external parties beyond our analytics and ad partners."
+      },
+      {
+        "title": "Permissions",
+        "content": "The app requests the **minimum necessary permissions**, specifically:\n\n* **Camera/Flashlight Access**: Used to turn your phone's flashlight on/off. No image or video data is captured or stored."
+      },
+      {
+        "title": "Ads and GDPR/CCPA Compliance",
+        "content": "We use Google AdMob to serve ads. Upon first launch, users in relevant regions are presented with a consent form in accordance with:\n\n* **GDPR** (EU)\n* **CCPA** (California, USA)\n\nUsers may opt out of personalized ads as required."
+      },
+      {
+        "title": "Data Retention",
+        "content": "We do **not** store personal data on our servers. All user-specific customization data remains on the device and is deleted when the app is uninstalled."
+      },
+      {
+        "title": "Children's Privacy",
+        "content": "Our app is not directed toward children under the age of 13. We do not knowingly collect personal data from minors."
+      },
+      {
+        "title": "Changes to This Policy",
+        "content": "We may update this Privacy Policy from time to time. Changes will be posted within the app or on the store listing."
+      },
+      {
+        "title": "Contact",
+        "content": "If you have questions about this Privacy Policy, please contact us at:\n**gguggulab@gmail.com**"
+      }
+    ]
+  }
+}

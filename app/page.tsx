@@ -54,6 +54,12 @@ export default function Home() {
               >
                 Contact
               </a>
+              <a
+                href="/privacy-policy"
+                className="hover:text-foreground transition-colors"
+              >
+                Privacy Policy
+              </a>
             </div>
           </div>
         </div>
