@@ -1,9 +1,9 @@
 import { ProjectGrid } from "@/components/project-grid";
-import { getAllProjects } from "@/lib/projects";
+import { getAllProjectsSortedByDate } from "@/lib/projects";
 import Link from "next/link";
 
 export default function Home() {
-  const projects = getAllProjects();
+  const projects = getAllProjectsSortedByDate();
 
   return (
     <div className="min-h-screen bg-background">
