@@ -3,16 +3,22 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { PrivacyPolicyContent } from "@/components/privacy-policy-content";
-import { getPrivacyPolicyByAppId, getAllAppsInfo } from "@/lib/privacy-policies";
+import {
+  getPrivacyPolicyByAppId,
+  getAllAppsInfo,
+} from "@/lib/privacy-policies";
 import { Metadata } from "next";
 
 interface PageProps {
-  params: { app: string };
+  params: Promise<{ app: string }>;
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const policy = getPrivacyPolicyByAppId(params.app);
-  
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { app } = await params;
+  const policy = getPrivacyPolicyByAppId(app);
+
   if (!policy) {
     return {
       title: "Privacy Policy Not Found",
@@ -32,8 +38,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function AppPrivacyPolicyPage({ params }: PageProps) {
-  const policy = getPrivacyPolicyByAppId(params.app);
+export default async function AppPrivacyPolicyPage({ params }: PageProps) {
+  const { app } = await params;
+  const policy = getPrivacyPolicyByAppId(app);
 
   if (!policy) {
     notFound();
@@ -44,7 +51,11 @@ export default function AppPrivacyPolicyPage({ params }: PageProps) {
       {/* Navigation */}
       <div className="mb-8">
         <Link href="/privacy-policy">
-          <Button variant="outline" size="sm" className="flex items-center gap-2">
+          <Button
+            variant="outline"
+            size="sm"
+            className="flex items-center gap-2"
+          >
             <ArrowLeft className="h-4 w-4" />
             Back to Privacy Policies
           </Button>
@@ -53,7 +64,6 @@ export default function AppPrivacyPolicyPage({ params }: PageProps) {
 
       {/* Privacy Policy Content */}
       <PrivacyPolicyContent policy={policy} />
-
     </div>
   );
 }

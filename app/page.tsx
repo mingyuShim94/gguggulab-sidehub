@@ -1,5 +1,6 @@
 import { ProjectGrid } from "@/components/project-grid";
 import { getAllProjects } from "@/lib/projects";
+import Link from "next/link";
 
 export default function Home() {
   const projects = getAllProjects();
@@ -54,12 +55,12 @@ export default function Home() {
               >
                 Contact
               </a>
-              <a
+              <Link
                 href="/privacy-policy"
                 className="hover:text-foreground transition-colors"
               >
                 Privacy Policy
-              </a>
+              </Link>
             </div>
           </div>
         </div>

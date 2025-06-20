@@ -8,15 +8,15 @@ export function PrivacyPolicyContent({ policy }: PrivacyPolicyContentProps) {
   // Simple markdown-like formatting
   const formatContent = (content: string) => {
     return content
-      .split('\n')
+      .split("\n")
       .map((line, index) => {
         // Handle bold text
-        if (line.includes('**')) {
+        if (line.includes("**")) {
           const parts = line.split(/(\*\*.*?\*\*)/);
           return (
             <p key={index} className="mb-4">
               {parts.map((part, partIndex) => {
-                if (part.startsWith('**') && part.endsWith('**')) {
+                if (part.startsWith("**") && part.endsWith("**")) {
                   return (
                     <strong key={partIndex} className="font-semibold">
                       {part.slice(2, -2)}
@@ -28,21 +28,21 @@ export function PrivacyPolicyContent({ policy }: PrivacyPolicyContentProps) {
             </p>
           );
         }
-        
+
         // Handle bullet points
-        if (line.startsWith('* ')) {
+        if (line.startsWith("* ")) {
           return (
             <li key={index} className="mb-2">
               {line.slice(2)}
             </li>
           );
         }
-        
+
         // Handle empty lines
-        if (line.trim() === '') {
+        if (line.trim() === "") {
           return null;
         }
-        
+
         // Regular paragraph
         return (
           <p key={index} className="mb-4">
@@ -65,9 +65,10 @@ export function PrivacyPolicyContent({ policy }: PrivacyPolicyContentProps) {
         </p>
         <div className="mt-6 p-4 bg-muted/50 rounded-lg">
           <p className="text-sm">
-            This Privacy Policy explains how the "{policy.appName}" app ("we", "our", or "us") 
-            collects, uses, and protects your information. By using the app, you agree to the 
-            terms of this policy.
+            This Privacy Policy explains how the &quot;{policy.appName}&quot;
+            app (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) collects,
+            uses, and protects your information. By using the app, you agree to
+            the terms of this policy.
           </p>
         </div>
       </div>
@@ -78,7 +79,7 @@ export function PrivacyPolicyContent({ policy }: PrivacyPolicyContentProps) {
         <ol className="space-y-2">
           {policy.sections.map((section, index) => (
             <li key={index}>
-              <a 
+              <a
                 href={`#section-${index}`}
                 className="text-primary hover:underline"
               >
@@ -97,7 +98,7 @@ export function PrivacyPolicyContent({ policy }: PrivacyPolicyContentProps) {
               {index + 1}. {section.title}
             </h2>
             <div className="prose prose-gray max-w-none">
-              {section.content.includes('* ') ? (
+              {section.content.includes("* ") ? (
                 <ul className="list-disc list-inside space-y-2 mb-4">
                   {formatContent(section.content)}
                 </ul>
