@@ -31,5 +31,16 @@
     "githubUrl": "https://github.com/username/prankshot",
     "createdAt": "2023-11-08T00:00:00Z",
     "updatedAt": "2024-03-22T00:00:00Z"
+  },
+  {
+    "id": "baldlight",
+    "title": "Bald Light",
+    "description": "A Flutter-based mobile app that differentiates itself from simple flashlight apps by combining flashlight functionality with the fun element of collecting and switching bald head images. Users see bald head images every time they turn the flashlight on and off, and the bald collection count increases each time they press the count button. New bald styles are unlocked at certain counts, and watching rewarded ads adds 100 counts.",
+    "shortDescription": "Bald head collection flashlight app (Coming Soon)",
+    "thumbnail": "/images/thumbnail/baldlight.png",
+    "url": null,
+    "githubUrl": null,
+    "createdAt": "2024-06-20T00:00:00Z",
+    "updatedAt": "2024-06-20T00:00:00Z"
   }
 ]
