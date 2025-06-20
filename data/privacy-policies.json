@@ -37,5 +37,44 @@
         "content": "If you have questions about this Privacy Policy, please contact us at:\n**gguggulab@gmail.com**"
       }
     ]
+  },
+  "brainrot2048": {
+    "appName": "Brainrot 2048",
+    "effectiveDate": "2025/06/20",
+    "contactEmail": "gguggulab@gmail.com",
+    "sections": [
+      {
+        "title": "Information We Collect",
+        "content": "### 1.1 Personal Information\nWe do **not** collect personally identifiable information such as your name, email, or phone number.\n\n### 1.2 Device and Usage Data\nWe collect anonymous data including:\n\n* Device information (e.g., model, OS, language)\n* Gameplay data (e.g., session time, score, frequency)\n* Crash logs and error diagnostics\n\n### 1.3 Advertising and Analytics\nWe collect:\n\n* Anonymous advertising identifiers (e.g., Google Advertising ID)\n* Data related to ad views and engagement"
+      },
+      {
+        "title": "How We Use Your Information",
+        "content": "We use collected data to:\n\n* Provide core game functionality and save local progress\n* Improve gameplay experience and app stability\n* Serve rewarded video and in-app advertisements\n* Monitor app usage and optimize design\n* Comply with applicable laws and regulations"
+      },
+      {
+        "title": "Third-Party Services",
+        "content": "Our app uses trusted third-party services which may collect data under their own policies:\n\n* **Google Firebase** (Authentication, Analytics, Crashlytics, Firestore)\n* **Google AdMob** (Advertising and rewards)\n* **Google Play Games / Apple Game Center** (Leaderboards, achievements – optional)\n\nRefer to each provider's privacy policy for full details."
+      },
+      {
+        "title": "Data Storage and Security",
+        "content": "* Game progress is saved locally on your device.\n* Analytical and crash data is securely transmitted and stored via encrypted connections (HTTPS).\n* We take reasonable steps to ensure the safety of your data."
+      },
+      {
+        "title": "Your Choices",
+        "content": "You can:\n\n* Disable personalized ads in your device settings\n* Reset your advertising ID\n* Request deletion of your anonymized usage data by contacting us"
+      },
+      {
+        "title": "Children's Privacy",
+        "content": "This app is intended for users aged **15 and older**. We do not knowingly collect data from children under 13. If such data is discovered, we will delete it promptly upon request."
+      },
+      {
+        "title": "Changes to This Privacy Policy",
+        "content": "We may update this Privacy Policy periodically. We will notify users of significant changes within the app."
+      },
+      {
+        "title": "Contact Us",
+        "content": "If you have any questions or requests regarding this policy, please contact:\n\n📧 **gguggulab@gmail.com**"
+      }
+    ]
   }
 }

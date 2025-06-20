@@ -42,5 +42,16 @@
     "githubUrl": null,
     "createdAt": "2024-06-20T00:00:00Z",
     "updatedAt": "2024-06-20T00:00:00Z"
+  },
+  {
+    "id": "brainrot2048",
+    "title": "Brainrot 2048",
+    "description": "A mobile puzzle game based on the popular 2048 game mechanics, enhanced with Brainrot characters, world-building, and voice acting. Players merge character tiles instead of numbers to reach higher levels, experiencing unique voices and animations with each merge. Features special tile removal effects through rewarded video ads, where different characters provide different removal patterns (X-shape, H-shape, full row/column removal).",
+    "shortDescription": "Character-based 2048 puzzle game with voice acting (Coming Soon)",
+    "thumbnail": "/images/thumbnail/brainrot_2048.png",
+    "url": null,
+    "githubUrl": null,
+    "createdAt": "2025-06-20T00:00:00Z",
+    "updatedAt": "2025-06-20T00:00:00Z"
   }
 ]
