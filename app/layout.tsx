@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Project Showcase | 개인 사이드프로젝트 모음집",
-  description: "개인적으로 제작한 사이드프로젝트들을 한 곳에 모아 카드 형태로 전시하고 공유하는 웹사이트입니다.",
+  title: "Project Showcase | Personal Side Projects Collection",
+  description: "A website that showcases and shares personal side projects in a card format, bringing them all together in one place.",
 };
 
 export default function RootLayout({
@@ -24,14 +24,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          defaultTheme="light"
+          enableSystem={false}
           disableTransitionOnChange
         >
           {children}

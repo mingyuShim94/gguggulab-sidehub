@@ -2,58 +2,34 @@
   {
     "id": "lol-persona",
     "title": "LOL Persona",
-    "description": "리그 오브 레전드 게임 플레이 스타일을 분석하여 개인의 성향과 특성을 파악하는 웹 애플리케이션입니다. 게임 데이터를 통해 사용자의 플레이 패턴을 분석하고 개성 있는 리포트를 제공합니다.",
-    "shortDescription": "게임 플레이 스타일 분석 및 성향 파악 서비스",
+    "description": "A web application that analyzes League of Legends gameplay style to identify individual tendencies and characteristics. It analyzes user play patterns through game data and provides personalized reports.",
+    "shortDescription": "Gameplay style analysis and personality assessment service",
     "thumbnail": "/images/thumbnail/lol-persona.png",
     "url": "https://lol-persona.example.com",
     "githubUrl": "https://github.com/username/lol-persona",
-    "tags": ["게임", "분석", "개인화", "리포트"],
-    "techStack": ["React", "TypeScript", "Node.js", "MongoDB"],
-    "status": "active",
-    "featured": true,
     "createdAt": "2024-01-15T00:00:00Z",
-    "updatedAt": "2024-06-15T00:00:00Z",
-    "metrics": {
-      "visitors": 15420,
-      "stars": 128
-    }
+    "updatedAt": "2024-06-15T00:00:00Z"
   },
   {
     "id": "nametokorean",
     "title": "Name to Korean",
-    "description": "외국인 이름을 한국어로 자연스럽게 변환해주는 서비스입니다. 발음 규칙과 한국어 표기법을 기반으로 정확한 한글 표기를 제공하며, 다양한 언어권의 이름을 지원합니다.",
-    "shortDescription": "외국인 이름 한글 변환 서비스",
+    "description": "A service that naturally converts foreign names to Korean. It provides accurate Hangul notation based on pronunciation rules and Korean notation standards, supporting names from various language regions.",
+    "shortDescription": "Foreign name to Korean conversion service",
     "thumbnail": "/images/thumbnail/nametokorean.png",
     "url": "https://nametokorean.example.com",
     "githubUrl": "https://github.com/username/nametokorean",
-    "tags": ["언어", "변환", "한글", "국제화"],
-    "techStack": ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
-    "status": "active",
-    "featured": true,
     "createdAt": "2024-02-20T00:00:00Z",
-    "updatedAt": "2024-06-10T00:00:00Z",
-    "metrics": {
-      "visitors": 8750,
-      "stars": 85
-    }
+    "updatedAt": "2024-06-10T00:00:00Z"
   },
   {
     "id": "prankshot",
     "title": "Prank Shot",
-    "description": "재미있는 장난 사진을 생성하고 공유할 수 있는 웹 애플리케이션입니다. 다양한 필터와 효과를 활용하여 친구들과 함께 즐길 수 있는 콘텐츠를 만들 수 있습니다.",
-    "shortDescription": "장난 사진 생성 및 공유 플랫폼",
+    "description": "A web application for creating and sharing fun prank photos. You can create content to enjoy with friends using various filters and effects.",
+    "shortDescription": "Prank photo creation and sharing platform",
     "thumbnail": "/images/thumbnail/prankshot.png",
     "url": "https://prankshot.example.com",
     "githubUrl": "https://github.com/username/prankshot",
-    "tags": ["사진", "필터", "엔터테인먼트", "소셜"],
-    "techStack": ["Vue.js", "JavaScript", "Canvas API", "Firebase"],
-    "status": "maintenance",
-    "featured": false,
     "createdAt": "2023-11-08T00:00:00Z",
-    "updatedAt": "2024-03-22T00:00:00Z",
-    "metrics": {
-      "visitors": 12340,
-      "stars": 67
-    }
+    "updatedAt": "2024-03-22T00:00:00Z"
   }
 ]

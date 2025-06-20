@@ -1,12 +1,8 @@
 import { ProjectGrid } from "@/components/project-grid";
-import { getAllProjects, getProjectStats } from "@/lib/projects";
-import { Badge } from "@/components/ui/badge";
-import { ThemeToggle } from "@/components/ui/theme-toggle";
+import { getAllProjects } from "@/lib/projects";
 
 export default function Home() {
   const projects = getAllProjects();
-  const stats = getProjectStats();
-
 
   return (
     <div className="min-h-screen bg-background">
@@ -20,37 +16,13 @@ export default function Home() {
                   Project Showcase
                 </h1>
                 <p className="text-muted-foreground text-sm sm:text-base">
-                  개인 사이드프로젝트 모음집
+                  Personal Side Projects Collection
                 </p>
               </div>
               <div className="flex items-center gap-2 sm:gap-4">
-                <Badge variant="outline" className="text-xs sm:text-sm">
-                  {stats.totalProjects} Projects
-                </Badge>
-                <Badge variant="outline" className="text-xs sm:text-sm hidden sm:inline-flex">
-                  {stats.totalVisitors.toLocaleString()} Visitors
-                </Badge>
-                <ThemeToggle />
-              </div>
-            </div>
-            
-            {/* Stats Overview */}  
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
-              <div className="text-center p-4 rounded-lg bg-muted/50">
-                <div className="text-2xl font-bold text-primary">{stats.activeProjects}</div>
-                <div className="text-sm text-muted-foreground">Active</div>
-              </div>
-              <div className="text-center p-4 rounded-lg bg-muted/50">
-                <div className="text-2xl font-bold text-primary">{stats.featuredProjects}</div>
-                <div className="text-sm text-muted-foreground">Featured</div>
-              </div>
-              <div className="text-center p-4 rounded-lg bg-muted/50">
-                <div className="text-2xl font-bold text-primary">{stats.totalStars}</div>
-                <div className="text-sm text-muted-foreground">Stars</div>
-              </div>
-              <div className="text-center p-4 rounded-lg bg-muted/50">
-                <div className="text-2xl font-bold text-primary">{stats.allTechStack.length}</div>
-                <div className="text-sm text-muted-foreground">Technologies</div>
+                <div className="text-xs sm:text-sm text-muted-foreground border border-border rounded-full px-3 py-1">
+                  {projects.length} Projects
+                </div>
               </div>
             </div>
           </div>
@@ -59,9 +31,7 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="container mx-auto px-4 py-8">
-        <ProjectGrid 
-          projects={projects}
-        />
+        <ProjectGrid projects={projects} />
       </main>
 
       {/* Footer */}
@@ -69,13 +39,19 @@ export default function Home() {
         <div className="container mx-auto px-4 py-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="text-sm text-muted-foreground">
-              © 2024 Project Showcase. All rights reserved.
+              © gguggulab. Showcase. All rights reserved.
             </div>
             <div className="flex items-center gap-4 text-sm text-muted-foreground">
-              <a href="https://github.com" className="hover:text-foreground transition-colors">
+              <a
+                href="https://github.com"
+                className="hover:text-foreground transition-colors"
+              >
                 GitHub
               </a>
-              <a href="mailto:contact@example.com" className="hover:text-foreground transition-colors">
+              <a
+                href="mailto:gguggulab@gmail.com"
+                className="hover:text-foreground transition-colors"
+              >
                 Contact
               </a>
             </div>
