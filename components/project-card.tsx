@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ExternalLink, Calendar } from "lucide-react";
+import { ExternalLink, Calendar, Github } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -34,6 +34,13 @@ export function ProjectCard({ project, onCardClick }: ProjectCardProps) {
       "_blank",
       "noopener,noreferrer"
     );
+  };
+
+  const handleGithubClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (project.githubUrl) {
+      window.open(project.githubUrl, "_blank", "noopener,noreferrer");
+    }
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
@@ -81,6 +88,17 @@ export function ProjectCard({ project, onCardClick }: ProjectCardProps) {
           </div>
 
           <div className="flex gap-1 ml-2 flex-shrink-0">
+            {project.githubUrl && (
+              <Button
+                variant="ghost"
+                size="icon"
+                className="h-7 w-7 sm:h-8 sm:w-8 opacity-0 group-hover:opacity-100 focus:opacity-100 transition-opacity"
+                aria-label={`View ${project.title} on GitHub`}
+                onClick={handleGithubClick}
+              >
+                <Github className="h-3 w-3 sm:h-4 sm:w-4" />
+              </Button>
+            )}
             <Button
               variant="ghost"
               size="icon"

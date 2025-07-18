@@ -6,6 +6,7 @@
     "shortDescription": "Gameplay style analysis and personality assessment service",
     "thumbnail": "/images/thumbnail/lol-persona.png",
     "url": "https://lol-persona.pages.dev/en",
+    "githubUrl": "https://github.com/mingyuShim94/lol-persona",
     "createdAt": "2024-07-24T00:00:00Z",
     "updatedAt": "2024-07-24T00:00:00Z"
   },
@@ -16,6 +17,7 @@
     "shortDescription": "Foreign name to Korean conversion service",
     "thumbnail": "/images/thumbnail/nametokorean.png",
     "url": "https://korean-name-changer.pages.dev/",
+    "githubUrl": "https://github.com/mingyuShim94/korean_name_changer",
     "createdAt": "2025-05-26T00:00:00Z",
     "updatedAt": "2025-05-26T00:00:00Z"
   },
@@ -26,6 +28,7 @@
     "shortDescription": "Prank photo creation and sharing platform",
     "thumbnail": "/images/thumbnail/prankshot.png",
     "url": "https://prankshot-landingpage.pages.dev/",
+    "githubUrl": "https://github.com/mingyuShim94/prankshot",
     "createdAt": "2024-12-14T00:00:00Z",
     "updatedAt": "2024-12-14T00:00:00Z"
   },
@@ -33,21 +36,12 @@
     "id": "bald-clicker",
     "title": "Bald Clicker",
     "description": "A mobile clicker game where players tap to hit bald heads for instant satisfaction and stress relief. Features a collection system where players unlock new bald head styles by reaching hit milestones, with each bald head having unique visual designs. Includes fever time mode activated through rewarded video ads, providing 3 minutes of double counting with enhanced visual effects. Built with Flutter for smooth 60 FPS gameplay, targeting teens who enjoy quick, rewarding mobile games with collection elements.",
-    "shortDescription": "Addictive bald head tapping clicker game with collection system (Coming Soon)",
+    "shortDescription": "Addictive bald head tapping clicker game with collection system",
     "thumbnail": "/images/thumbnail/bald_clicker.png",
     "url": "https://apps.apple.com/az/app/bald-clicker/id6747410558?uo=2",
+    "githubUrl": "https://github.com/mingyuShim94/baldlight",
     "createdAt": "2025-06-29T00:00:00Z",
     "updatedAt": "2025-06-29T00:00:00Z"
-  },
-  {
-    "id": "brainrot2048",
-    "title": "Brainrot 2048",
-    "description": "A mobile puzzle game based on the popular 2048 game mechanics, enhanced with Brainrot characters, world-building, and voice acting. Players merge character tiles instead of numbers to reach higher levels, experiencing unique voices and animations with each merge. Features special tile removal effects through rewarded video ads, where different characters provide different removal patterns (X-shape, H-shape, full row/column removal).",
-    "shortDescription": "Character-based 2048 puzzle game with voice acting (Coming Soon)",
-    "thumbnail": "/images/thumbnail/brainrot_2048.png",
-    "url": null,
-    "createdAt": "2025-06-20T00:00:00Z",
-    "updatedAt": "2025-06-20T00:00:00Z"
   },
   {
     "id": "toon-prompt",
@@ -56,7 +50,30 @@
     "shortDescription": "Photo to animation style conversion service",
     "thumbnail": "/images/thumbnail/toon-promt.png",
     "url": "https://toon-prompt.pages.dev/",
+    "githubUrl": "https://github.com/mingyuShim94/toon-prompt",
     "createdAt": "2024-10-30T00:00:00Z",
     "updatedAt": "2024-10-30T00:00:00Z"
+  },
+  {
+    "id": "kpopdemonhunters",
+    "title": "K-Pop Demon Hunters",
+    "description": "A web-based action game where players hunt demons using K-Pop themed weapons and characters. Features dynamic combat system with music-synced gameplay elements.",
+    "shortDescription": "K-Pop themed demon hunting action game",
+    "thumbnail": "/images/thumbnail/kpopdemonhunters.png",
+    "url": "https://kpopdemonhunters.net/",
+    "githubUrl": "https://github.com/mingyuShim94/kpopdemonhunters",
+    "createdAt": "2025-07-08T00:00:00Z",
+    "updatedAt": "2025-07-16T00:00:00Z"
+  },
+  {
+    "id": "halindoumi",
+    "title": "할인도우미 (Discount Helper)",
+    "description": "편의점과 카페에서 최적의 할인 방법을 찾아주는 실용적인 웹 애플리케이션입니다. 복잡한 편의점/카페 할인 혜택들(통신사 멤버십, 카드사 할인, 간편결제 등)을 실시간으로 비교 분석하여 사용자에게 최적의 할인 조합을 제안합니다. Next.js 15, React 19, TypeScript 5를 활용한 최신 기술 스택으로 구현되었으며, 클라이언트 사이드 계산으로 서버 비용을 최소화했습니다.",
+    "shortDescription": "편의점/카페 할인 최적화 도우미 서비스",
+    "thumbnail": "/images/thumbnail/halindoumi.png",
+    "url": "https://halindoumi.com",
+    "githubUrl": "https://github.com/mingyuShim94/discount_helper",
+    "createdAt": "2025-02-23T00:00:00Z",
+    "updatedAt": "2025-04-14T00:00:00Z"
   }
 ]
