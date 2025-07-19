@@ -22,18 +22,25 @@ export function ProjectCard({ project, onCardClick }: ProjectCardProps) {
       onCardClick(project);
     }
 
-    const utmParams = new URLSearchParams({
-      utm_source: "portfolio",
-      utm_medium: "project_card",
-      utm_campaign: "project_showcase",
-      utm_content: project.id,
-    });
+    // Google Play Store URL에는 UTM 파라미터를 추가하지 않음
+    const isGooglePlayStore = project.url.includes('play.google.com');
+    
+    if (isGooglePlayStore) {
+      window.open(project.url, "_blank", "noopener,noreferrer");
+    } else {
+      const utmParams = new URLSearchParams({
+        utm_source: "portfolio",
+        utm_medium: "project_card",
+        utm_campaign: "project_showcase",
+        utm_content: project.id,
+      });
 
-    window.open(
-      `${project.url}?${utmParams.toString()}`,
-      "_blank",
-      "noopener,noreferrer"
-    );
+      window.open(
+        `${project.url}?${utmParams.toString()}`,
+        "_blank",
+        "noopener,noreferrer"
+      );
+    }
   };
 
   const handleGithubClick = (e: React.MouseEvent) => {
